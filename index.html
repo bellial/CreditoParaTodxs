@@ -7,6 +7,7 @@
     <title>Crédito Para Todxs</title>
     <link rel="stylesheet" href="style.css" type="text/css" media="all"/>
     <link rel="icon" href="/images/android-chrome-192x192.png" sizes="192x192" />
+    <script defer type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <header>
@@ -34,7 +35,7 @@
         </nav>
     </header>
     <main>
-        <section id="one">
+        <section class="one" id="top">
             <h2>As vantagens do Crédito Para Todxs</h2>
             <ul id="first">
                 <li><img src="/images/taxa.png" alt="Empréstimo com juros baixo">Taxas a partir de 0,75% a.m. e cartões com diversos benefícios.</li>
@@ -43,7 +44,7 @@
                 <li><img src="/images/security.png" alt="Empréstimo seguro">A Crédito Para Todxs garante a privacidade e segurança das suas informações.</li>
             </ul>
         </section>
-        <section id="two">
+        <section class="two">
             <h2>Crédito em 3 passos</h2>
             <ol>
                 <li>Complete seu perfil</li>
@@ -65,6 +66,9 @@
             <button>Simule Grátis</button>
         </section>
     </main>
-    <footer>Made by Priss</footer>
+    <footer>
+        <h3>Made by Priss</h3>
+        <button onclick="scrollToTop()" id="scroll-btn" title="Go to top"></button>
+    </footer>
 </body>
 </html>
