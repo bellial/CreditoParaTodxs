@@ -1,53 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crédito Para Todxs</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all"/>
+    <link rel="icon" href="/images/android-chrome-192x192.png" sizes="192x192" />
+    <script defer type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <header>
-        <a href="#" title="Crédito Para Todxs">
-            <img src="/images/cartao-de-credito.png" alt="Crédito Para Todxs">
+        <a href="index.html" title="Crédito Para Todxs">
+            <img id="logo" src="/images/cartao-de-credito.png" alt="Crédito Para Todxs">
+            <h1>Crédito Para Todxs</h1>
         </a>
-        <nav>
-            <ul>
-                <li>Como Funciona</li>
-                <li>Empréstimo</li>
-                    <ul>
-                        <li>Empréstimo pessoal</li>
-                        <li>Empréstimo consignado</li>
-                        <li>Empréstimo com garantia</li>
-                        <li>Empréstimo par autônomo</li>
-                        <li>Empréstimo sem comprovação de renda</li>
-                        <li>Empréstimo para negativado</li>
-                        <li>Simulador de empréstimo online</li>
+        <nav role="navigation">
+            <ul class="nav">
+                <li><a href="#">Como Funciona</a></li>
+                <li id="drop"><a href="#" aria-haspopup="true">Empréstimo</a>
+                    <ul class="dropdown" aria-label="submenu">
+                        <li><a href="#">Empréstimo pessoal</a></li>
+                        <li><a href="#">Empréstimo consignado</a></li>
+                        <li><a href="#">Empréstimo com garantia</a></li>
+                        <li><a href="#">Empréstimo para autônomo</a></li>
+                        <li><a href="#">Empréstimo sem comprovação de renda</a></li>
+                        <li><a href="#">Empréstimo para negativado</a></li>
+                        <li><a href="simulador.html">Simulador de empréstimo online</a></li>
                     </ul>
-                <li>Ajuda</li>
-            </ul>
+                </li>
+                <li><a href="#">Ajuda</a></li>
+                <button><a href="#">Entrar</a></button>
+            </ul>   
         </nav>
-        <button>Entrar</button>
     </header>
-        <h1>Ofertas que cabem no seu bolso, simule seu empréstimo agora mesmo.</h1>
+    <main>
+        <section class="one">
+        <h2 id="top">Ofertas que cabem no seu bolso, simule seu empréstimo agora mesmo.</h2>
         <section class="simulador">
             <section class="simulador-input">
-                <section class="slider">
+                <section class="question-slider">
                     <p>De quanto você precisa?</p>
-                    <p class="quantidade">R$ 5000,00</p>
-                    <div class="slide-track">
+                    <!--a quantidade muda conforme a posição do slider-->
+                    <p class="quantidade">R$ 5.000,00</p>
+                    <div class="slidetrack">
                         <div class="sliderfill" id="slider-range-fill" style="width:16.6667%"></div>
                         <input class="slider" id="slider-range" type="range" value="5000" min="250" max="30000" step="250">
                     </div>
                     <p class="range">
                         <span>R$ 150,00</span>
-                        <span>R$ 30000,00</span>
+                        <span>R$ 30.000,00</span>
                     </p>
                 </section>
-                <section class="slider">
+                <section class="question-slider">
                     <p>Em quantos meses quer pagar?</p>
+                    <!--a quantidade muda conforme a posição do slider-->
                     <p class="meses">6 meses</p>
-                    <div class="slide-track">
+                    <div class="slidetrack">
                         <div class="sliderfill" id="slider-range-fill" style="width:16.6667%"></div>
                         <input class="slider" id="slider-range" type="range" value="5000" min="250" max="30000" step="250">
                     </div>
@@ -59,12 +68,15 @@
             </section>
             <section class="simulador-output">
                 <p>Parcela Mensal Aproximada</p>
+                <!--a quantidade muda conforme a posição do slider-->
                 <span class="quantidade-output">6x</span>
                 <div class="loan-amount">
-                    <span>R$ 4000,00</span>
+                    <span>R$ 4.000,00</span>
                 </div>
             </section>
-            <button>Buscar ofertas de empréstimos</button>
         </section>
+        <button><a href="#">Buscar ofertas de empréstimos</a></button>
+    </section>
+    </main>
 </body>
 </html>

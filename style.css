@@ -122,17 +122,22 @@ nav li:hover {
 button {
   font: inherit;
   font-weight: 600;
-  padding: 1em;
   color: #fff;
+  padding: 1em;
   border-radius: 5px;
   background-color: #33c4c4;
+}
+button a{
+  color: #fff;
 }
 button:hover {
   opacity: 0.7;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   background-color: transparent;
-  color: #333;
+}
+button:hover a{
+  color:#333
 }
 main li {
   display: inline;
@@ -171,7 +176,6 @@ section h2 {
   font-size: 100%;
   font: inherit;
   text-align: center;
-  box-sizing: border-box;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -230,9 +234,153 @@ ol li:before {
   margin-right: 0.5rem;
   content: counters(li, ".", decimal-leading-zero) ".";
 }
-#two button {
+#simule {
   margin-left: 100vh;
   margin-bottom: 1em;
+}
+.three section{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+.three img{
+    width: 20%;
+    padding: 0;
+  border: 0;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: auto;
+float: left;
+}
+.three ul{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  max-width: 100%;
+  margin: 0 2em 2em 0;
+  letter-spacing: normal;
+  text-transform: inherit;
+  font-size: 100%;
+  font: inherit;
+  box-sizing: border-box;
+}
+.three li{
+  letter-spacing: normal;
+  text-transform: inherit;
+  list-style: none;
+  font: inherit;
+  width: 100%;
+  padding: 1em;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1em;
+  text-align: left;
+  margin: 0 2em;
+}
+.three li:hover{
+  background-color: #f5f5f5;
+}
+.three a:hover {
+  color: #666;
+}
+#top{
+  margin-top: -20px;
+}
+.simulador{
+  background-color: #f5f5f5;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  height: 45vh;
+  width: 100%;
+}
+.simulador-input{
+ text-align: center;
+  width: 55%;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 11px 19px 19px;
+}
+.question-slider p{
+  line-height: 1.5625;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 8px 0;
+}
+.quantidade,
+.meses{
+
+  line-height: 1.5625;
+  text-align: center;
+  font-size: 18px;
+  margin: 8px 0;
+  font-weight: 500;
+  color: #33c4c4;
+}
+.slidetrack{
+  position: relative;
+  height: 6px;
+  width: 100%;
+  margin: 10px 0;
+}
+.sliderfill{
+  pointer-events: none;
+  z-index: 1;
+  position: absolute;
+  height: 6px;
+  border-radius: 3px;
+  width: 16.6667%;
+}
+.range{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+}
+.slider{
+  width: 100%;
+  height: 6px;
+  position: absolute;
+  left: 0;
+}
+.simulador-output{
+  text-align: center;
+  height: 100%;
+  width: 45%;
+  margin: 0 auto;
+  padding: 11px 19px 19px;
+  box-sizing: border-box;
+}
+.simulador-output p{
+  margin-bottom: 12.5px;
+  line-height: 1.5625;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+}
+.quantidade-output{
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #33c4c4;
+  margin: 1em 0;
+}
+.loan-amount{
+  margin: 1em;
+  text-align: center;
+  color: #33c4c4;
+  font-size: 48px;
+  font-weight: 500;
+}
+.loan-amount span{
+  color: #33c4c4;
+  text-align: center;
+  font-weight: 300;
 }
 #scroll-btn {
   background-color: #ccc;
@@ -259,5 +407,4 @@ ol li:before {
   margin: 10px;
   padding: 3px;
   transform: rotate(-135deg);
-  transition: transform 0.2s ease-in;
 }
